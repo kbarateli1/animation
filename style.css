@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+.firstcar img{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: anim;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    
+
+}
+
+
+
+@keyframes anim{
+    0% {
+        top: 0px;
+        background-color: darkmagenta;
+        left: 0
+
+    }
+    50% {
+        top: 0px;
+        background-color: aqua;
+        left: 400px;
+        transform:rotateY();
+    }
+
+    100%{
+        top: 0px;
+        background-color: rgb(255, 0, 242);
+        left: 800px;
+        transform:scale3d()
+    }
+} 
+
+
+
+.secondcar img{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position:absolute;
+    top:0;
+    right:0;
+    animation: anim2;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+   
+}
+
+
+
+@keyframes anim2{
+    100% {
+        top: 0px;
+        background-color: darkmagenta;
+        right:0;
+
+    }
+    50% {
+        top: 0px;
+        background-color: aqua;
+        right: 400px;
+        transform:rotateY();
+    }
+
+    0%{
+        top: 0px;
+        background-color: rgb(255, 0, 242);
+        right: 800px;
+        transform:scale3d()
+    }
+} 
+
+
+
+
+
+
